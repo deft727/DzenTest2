@@ -7,7 +7,7 @@ from .models import Reviews
 class IndexView(View):
     def get(self,request,*args,**kwargs):
         form=ReviewsForm(request.POST or None)
-        reviews=Reviews.objects.filter(parent__isnull=True)
+        reviews=Reviews.objects.filter(parent__isnull=True).order_by('-id')
     
         context={
             'form':form,

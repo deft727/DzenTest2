@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'comments.apps.CommentsConfig',
         'crispy_forms',
+        'captcha',
 
 ]
 
@@ -122,3 +123,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
